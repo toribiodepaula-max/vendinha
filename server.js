@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 mercadopago.configure({
-  access_token: 'SEU_TOKEN_AQUI'
+  access_token: 'APP_USR-3004423024092699-052221-2029d208aa933a676b8f30e45bc865ed-3421215970'
 });
 
 app.post('/criar-pix', async (req, res) => {
@@ -30,4 +30,4 @@ app.post('/criar-pix', async (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log("rodando"));
+app.listen(process.env.PORT || 3000, () => console.log("rodando"));
