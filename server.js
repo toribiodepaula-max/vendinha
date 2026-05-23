@@ -6,7 +6,7 @@ app.use(cors());
 app.use(express.json());
 
 mercadopago.configure({
-  access_token: 'APP_USR-3004423024092699-052221-2029d208aa933a676b8f30e45bc865ed-3421215970'
+  access_token: 'APP_USR-5534248245087451-052221-107c6efad9e5f845bd87a2af3f4be26a-269570965'
 });
 
 app.post('/criar-pix', async (req, res) => {
